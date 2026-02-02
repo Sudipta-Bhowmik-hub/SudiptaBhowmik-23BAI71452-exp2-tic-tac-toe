@@ -1,17 +1,9 @@
 import React from 'react';
-import { Button } from 'react-bootstrap';
 
-function Square({ value, onClick }) {
+export default function Square({ value, onClick }) {
   return (
-    <Button
-      variant="outline-dark"
-      className="m-1"
-      style={{ width: '80px', height: '80px', fontSize: '24px' }}
-      onClick={onClick}
-    >
+    <button className="square-btn" onClick={onClick}>
       {value}
-    </Button>
+    </button>
   );
 }
-
-export default Square;
