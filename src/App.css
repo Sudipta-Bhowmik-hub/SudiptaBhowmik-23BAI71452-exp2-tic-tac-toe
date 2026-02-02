@@ -1,0 +1,76 @@
+/* Full-page background */
+body {
+  background-image: url('https://www.pixelstalk.net/wp-content/uploads/images2/HD-Light-Backgrounds-Free.jpg');   /* Place bg.jpg inside public/ folder */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Semi-transparent container for readability */
+.app-container {
+  background-color: rgba(216, 89, 89, 0.85);
+  border-radius: 12px;
+  padding: 30px;
+  max-width: 700px;
+  margin: 40px auto;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+/* Title styling */
+.app-container h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+/* Difficulty dropdown */
+.app-container select {
+  font-size: 1rem;
+  padding: 8px;
+  margin-bottom: 20px;
+}
+
+/* Tic Tac Toe board grid */
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 8px;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+/* Each square button */
+.square-btn {
+  width: 100px;
+  height: 100px;
+  font-size: 2rem;
+  font-weight: bold;
+  border: 2px solid #333;
+  background-color: #6561e4;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.square-btn:hover {
+  background-color: #97e663;
+  transform: scale(1.05);
+}
+
+/* Game status text */
+.status-text {
+  margin-top: 15px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #111;
+}
+
+/* Reset button spacing */
+.app-container .btn-secondary {
+  margin-top: 15px;
+  font-size: 1rem;
+  padding: 8px 20px;
+}
